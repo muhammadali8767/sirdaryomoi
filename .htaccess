@@ -1,0 +1,5 @@
+#<If "req('Host') == 'sirdaryomoi.uz' || req('Host') == 'www.sirdaryomoi.uz'">
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule ^(.*)$ public/$1 [L]
+#</If>
